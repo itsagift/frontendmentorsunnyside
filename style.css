@@ -1,9 +1,236 @@
 *{
     margin:0;
     padding:0;
+    box-sizing: border-box;
 }
 :root {
-    --soft-red: hsl(7, 99%, 70%);
-    --yellow: hsl(51, 100%, 49%);
-    --graphic-design-text: 
+    --soft-red: rgb(254, 120, 103);
+    --yellow: rgb(250, 212, 0);
+    --graphic-design-cyan: hsl(167, 40%, 24%);
+    --photography-blue: hsl(198, 62%, 26%);
+    --footer-cyan: hsl(168, 34%, 41%);
+    --dark-desat-blue: hsl(212, 27%, 19%);
+    --dark-gray-blue: hsl(213, 9%, 39%);
+    --gray-blue: hsl(210, 4%, 67%);
+    --white: hsl(0, 0%, 100%);
 }
+body{
+    font-size:18px;
+}
+button:hover{
+    cursor: pointer;
+}
+.top{
+    max-width: 100vw;
+    padding: 2rem 3% 0px;
+    min-height:800px;
+    background-image: url(images/desktop/image-header.jpg);
+    background-repeat:no-repeat;
+    background-position: bottom center;
+    background-size: cover;
+    position: relative;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar-logo{
+    width:170px;
+    height:auto;
+}
+.navbar-links{
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+.navbar-links a{
+    text-decoration:none;
+}
+.navbar-link{
+    margin-right:3.125rem;
+    font-family: 'Barlow';
+    font-weight:600;
+    padding:0;
+}
+.navbar-link a{
+    color:var(--white);
+}
+.navbar-link--contact{
+    background-color:#fff;
+    padding:1rem 1.75rem;
+    font-family: 'Fraunces';
+    font-weight: 700;
+    font-size:0.83rem;
+    text-transform: uppercase;
+    border-radius:1.75rem;
+}
+.navbar-link--contact a{
+    color:var(--dark-desat-blue);
+}
+.top-title{
+    margin-top:105px;
+    color:var(--white);
+    font-size:3.1rem;
+    font-family: 'Fraunces';
+    font-weight:700;
+    text-transform: uppercase;
+    letter-spacing: 8.75px;
+    text-align: center;
+}
+.top-arrow{
+    display: block;
+    margin: 100px auto;
+}
+.main {
+    display: grid; 
+    grid-auto-columns: 1fr; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "transform-your-brand egg"
+      "cup stand-out"
+      "cherry orange"; 
+  }
+.main-transform { 
+      grid-area: transform-your-brand; 
+      display: flex;
+      flex-direction: column;
+      padding:9rem;
+}
+.transform-title{
+    font-family: 'Fraunces';
+    font-size:2.2rem;
+    line-height: 2.2rem;
+    color: var(--dark-desat-blue);
+    margin-bottom:2rem;
+}
+.transform-desc{
+    color:var(--dark-gray-blue);
+    font-family: 'Barlow';
+    font-size: 1rem;
+    line-height:1.6rem;
+    font-weight:600;
+    margin-bottom:2rem;
+}
+.transform-button{
+    width:33%;
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.25) 70%, rgba(250,212,0,0.25) 70%, rgba(250,212,0,0.25) 100%);
+    border:none;
+    font-family: 'Fraunces';
+    font-size:0.83rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    color:var(--dark-desat-blue);
+}
+.main-egg { 
+    grid-area: egg; 
+    background-image:url(images/desktop/image-transform.jpg);
+}
+.main-cup { 
+      grid-area: cup; 
+      background-image:url(images/desktop/image-stand-out.jpg);
+}
+.main-standout { 
+    grid-area: stand-out; 
+    display: flex;
+    flex-direction: column;
+    padding:9rem;
+}
+.standout-title{
+    font-family: 'Fraunces';
+    font-size:2.2rem;
+    line-height: 2.2rem;
+    color: var(--dark-desat-blue);
+    margin-bottom:2rem;
+}
+.standout-desc{
+    color:var(--dark-gray-blue);
+    font-family: 'Barlow';
+    font-size: 1rem;
+    line-height:1.6rem;
+    font-weight:600;
+    margin-bottom:2rem;
+}
+.standout-button{
+    width:33%;
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 70%, rgba(254,120,103,0.25) 70%, rgba(254,120,103,0.25) 100%);
+    border:none;
+    font-family: 'Fraunces';
+    font-size:0.83rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    color:var(--dark-desat-blue);
+}
+  .main-cherry { 
+    grid-area: cherry; 
+    background-image:url(images/desktop/image-graphic-design.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    padding-left:9rem;
+    padding-right:9rem;
+    padding-top:22rem;
+    text-align: center;
+    color:var(--graphic-design-cyan);
+}
+.cherry-title{
+    font-size:1.5rem;
+    font-family:'Fraunces';
+    font-weight:900;
+    margin-bottom:1rem;
+}
+.cherry-desc{
+    font-family:'Barlow';
+    font-size:0.8rem;
+    font-weight:600;
+    line-height: 1.5rem;
+}
+.main-orange { 
+    grid-area: orange; 
+    background-image:url(images/desktop/image-photography.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    padding-left:9rem;
+    padding-right:9rem;
+    padding-top:22rem;
+    text-align: center;
+    color:var(--photography-blue);
+}
+.orange-title{
+    font-size:1.5rem;
+    font-family:'Fraunces';
+    font-weight:900;
+    margin-bottom:1rem;
+    
+}
+.orange-desc{
+    font-family:'Barlow';
+    font-size:0.8rem;
+    font-weight:600;
+    line-height: 1.5rem;
+}
+.testimonials{
+    padding:12%;
+}
+.testimonials-title{
+    font-family:'Fraunces';
+    font-size:1.1rem;
+    letter-spacing:0.27rem;
+    color:var(--gray-blue);
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom:2rem;
+    
+}
+.testimonials-grid{
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 1fr; 
+    grid-template-areas: 
+    "emily thomas jennie"; 
+}
+.testimonials-emily { grid-area: emily; }
+.testimonials-thomas { grid-area: thomas; }
+.testimonials-jennie { grid-area: jennie; }
