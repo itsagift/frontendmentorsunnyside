@@ -226,11 +226,35 @@ button:hover{
     
 }
 .testimonials-grid{
+    display: grid;
     grid-template-columns: 1fr 1fr 1fr; 
-    grid-template-rows: 1fr; 
-    grid-template-areas: 
-    "emily thomas jennie"; 
+    text-align: center;
 }
-.testimonials-emily { grid-area: emily; }
-.testimonials-thomas { grid-area: thomas; }
-.testimonials-jennie { grid-area: jennie; }
+
+.grid-icon{
+    border-radius:100%;
+    width:72px;
+    margin-bottom:3rem;
+}
+.grid-desc{
+    font-family:'Barlow';
+    color:var(--dark-gray-blue);
+    line-height:1.7rem;
+    text-align: center;
+    
+}
+.grid-title{
+    margin-top:3rem;
+    font-size:1rem;
+    font-family:'Fraunces';
+    font-weight:900;
+    color:var(--dark-desat-blue);
+}
+.grid-span{
+    margin-top:1rem;
+    font-family:'Barlow';
+    font-size:0.77rem;
+    color:var(--gray-blue);
+}
+
+
