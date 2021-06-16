@@ -53,9 +53,168 @@ button:hover{
     display: block;
     margin: 100px auto;
 }
+.transform-title{
+    font-family: 'Fraunces';
+    font-size:2.2rem;
+    line-height: 2.2rem;
+    color: var(--dark-desat-blue);
+    margin-bottom:2rem;
+}
+.transform-desc{
+    color:var(--dark-gray-blue);
+    font-family: 'Barlow';
+    font-size: 1rem;
+    line-height:1.6rem;
+    font-weight:600;
+    margin-bottom:2rem;
+}
+.transform-button{
+    width:33%;
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.25) 70%, rgba(250,212,0,0.25) 70%, rgba(250,212,0,0.25) 100%);
+    border:none;
+    font-family: 'Fraunces';
+    font-size:0.83rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    color:var(--dark-desat-blue);
+}
+.transform-button:hover{
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 70%, rgba(250,212,0,1) 70%, rgba(250,212,0,1) 100%);
+}
+.standout-title{
+    font-family: 'Fraunces';
+    font-size:2.2rem;
+    line-height: 2.2rem;
+    color: var(--dark-desat-blue);
+    margin-bottom:2rem;
+}
+.standout-desc{
+    color:var(--dark-gray-blue);
+    font-family: 'Barlow';
+    font-size: 1rem;
+    line-height:1.6rem;
+    font-weight:600;
+    margin-bottom:2rem;
+}
+.standout-button{
+    width:33%;
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 70%, rgba(254,120,103,0.25) 70%, rgba(254,120,103,0.25) 100%);
+    border:none;
+    font-family: 'Fraunces';
+    font-size:0.83rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    color:var(--dark-desat-blue);
+}
+.standout-button:hover{
+    cursor:pointer;
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 70%, rgba(254,120,103,1) 70%, rgba(254,120,103,1) 100%);
+    border:none;
+}
+.cherry-title{
+    margin-top:20rem;
+    font-size:1.5rem;
+    font-family:'Fraunces';
+    font-weight:900;
+    margin-bottom:1rem;
+}
+.cherry-desc{
+    font-family:'Barlow';
+    font-size:0.8rem;
+    font-weight:600;
+    line-height: 1.5rem;
+    margin-bottom:2rem;
+}
+.orange-title{
+    font-size:1.5rem;
+    font-family:'Fraunces';
+    font-weight:900;
+    margin-bottom:1rem;
+    
+}
+.orange-desc{
+    font-family:'Barlow';
+    font-size:0.8rem;
+    font-weight:600;
+    line-height: 1.5rem;
+}
+.testimonials{
+    padding:12%;
+}
+.testimonials-title{
+    font-family:'Fraunces';
+    font-size:1.1rem;
+    letter-spacing:0.27rem;
+    color:var(--gray-blue);
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom:2rem;
+}
+.grid-icon{
+    border-radius:100%;
+    width:72px;
+    margin-bottom:3rem;
+}
+.grid-desc{
+    font-family:'Barlow';
+    color:var(--dark-gray-blue);
+    line-height:1.7rem;
+    text-align: center;
+    
+}
+.grid-title{
+    margin-top:3rem;
+    font-size:1rem;
+    font-family:'Fraunces';
+    font-weight:900;
+    color:var(--dark-desat-blue);
+}
+.grid-span{
+    margin-top:1rem;
+    font-family:'Barlow';
+    font-size:0.77rem;
+    color:var(--gray-blue);
+}
+.bottom{
+    background-color:#90D4C6;
+    padding:9rem 9rem 3rem 9rem;
+    text-align: center;
+}
+.bottom-links{
+    list-style: none;
+    display: flex;
+    width:100%;
+    margin: 3rem auto 0;
+    justify-content: space-evenly;
+    text-align: center;
+}
+.bottom-link a{
+    color:var(--footer-cyan);
+    text-decoration: none;
+    font-family: 'Barlow';
+}
+.bottom-link a:hover{
+    color:var(--white);
+}
+.bottom-icons{
+    list-style: none;
+    display:flex;
+    width:10rem;
+    margin: 5rem auto 0;
+    justify-content: space-between;
+}
+.bottom-icon{
+    margin-right:10px;
+}
+.bottom-icon:hover svg path{
+    fill:var(--white);
+}
 @media screen and (max-width:767px){
     .top{
-        width: 100vw;
+        min-width: 100vw;
         padding: 2rem 3% 0px;
         min-height:800px;
         background-image: url(images/desktop/image-header.jpg);
@@ -82,6 +241,78 @@ button:hover{
     }
     .navbar-hamburger:hover{
         cursor:pointer;
+    }
+    .grid{
+        display: grid;
+        grid-template-columns: 1fr; 
+        grid-template-rows: 1fr 1fr; 
+        max-width: 100vw;
+    }
+    .transform-egg { 
+        grid-row: 1 / 2;
+        background-image:url(images/desktop/image-transform.jpg);
+        background-size: cover;
+        height:600px;
+    }
+    .transform-text { 
+        grid-row: 2 / 3;
+        display: flex;
+        flex-direction: column;
+        padding:3rem;
+        justify-content: center;
+    }
+    .photogrid-img{
+        max-width: 100vw;
+    }
+    .standout-cup { 
+        grid-row: 1 / 2;
+          background-image:url(images/desktop/image-stand-out.jpg);
+          height:600px;
+    }
+    .standout-text{
+        grid-row: 2 / 3;
+        display: flex;
+        flex-direction: column;
+        padding:3rem;
+        justify-content: center;
+    }
+    .main-cherry { 
+        grid-row: 1 / 2;
+        height:600px;
+        background-image:url(images/desktop/image-graphic-design.jpg);
+        background-repeat: no-repeat;
+        background-size:cover;
+        padding-left:9rem;
+        padding-right:9rem;
+        text-align: center;
+        color:var(--graphic-design-cyan);
+    }
+    .main-orange { 
+        grid-row: 2 / 3;
+        background-image:url(images/desktop/image-photography.jpg);
+        background-repeat: no-repeat;
+        background-size:cover;
+        padding-left:9rem;
+        padding-right:9rem;
+        padding-top:20rem;
+        text-align: center;
+        color:var(--photography-blue);
+    }
+    .testimonials-grid{
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr; 
+        text-align: center;
+    }
+    .grid-span{
+        margin-bottom:3rem;
+    }
+    .photogrid{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .photogrid-img{
+        width:50vw;
     }
 }
 
@@ -119,158 +350,59 @@ button:hover{
         color:var(--dark-desat-blue);
     }
     
-    .main {
+    .grid { 
         display: grid; 
-        grid-auto-columns: 1fr; 
         grid-template-columns: 1fr 1fr; 
-        grid-template-rows: 1fr 1fr 1fr; 
-        gap: 0px 0px; 
-        grid-template-areas: 
-          "transform-your-brand egg"
-          "cup stand-out"
-          "cherry orange"; 
-      }
-    .main-transform { 
-          grid-area: transform-your-brand; 
-          display: flex;
-          flex-direction: column;
-          padding:9rem;
+        grid-template-rows: 1fr; 
     }
-    .transform-title{
-        font-family: 'Fraunces';
-        font-size:2.2rem;
-        line-height: 2.2rem;
-        color: var(--dark-desat-blue);
-        margin-bottom:2rem;
-    }
-    .transform-desc{
-        color:var(--dark-gray-blue);
-        font-family: 'Barlow';
-        font-size: 1rem;
-        line-height:1.6rem;
-        font-weight:600;
-        margin-bottom:2rem;
-    }
-    .transform-button{
-        width:33%;
-        background: rgb(255,255,255);
-        background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.25) 70%, rgba(250,212,0,0.25) 70%, rgba(250,212,0,0.25) 100%);
-        border:none;
-        font-family: 'Fraunces';
-        font-size:0.83rem;
-        font-weight: 900;
-        text-transform: uppercase;
-        color:var(--dark-desat-blue);
-    }
-    .transform-button:hover{
-        background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 70%, rgba(250,212,0,1) 70%, rgba(250,212,0,1) 100%);
-    }
-    .main-egg { 
-        grid-area: egg; 
-        background-image:url(images/desktop/image-transform.jpg);
-    }
-    .main-cup { 
-          grid-area: cup; 
-          background-image:url(images/desktop/image-stand-out.jpg);
-    }
-    .main-standout { 
-        grid-area: stand-out; 
+     
+    .transform-text { 
+        grid-column: 1 / 2;
         display: flex;
         flex-direction: column;
         padding:9rem;
     }
-    .standout-title{
-        font-family: 'Fraunces';
-        font-size:2.2rem;
-        line-height: 2.2rem;
-        color: var(--dark-desat-blue);
-        margin-bottom:2rem;
+    
+    .transform-egg { 
+        grid-column: 2 / 2;
+        background-image:url(images/desktop/image-transform.jpg);
     }
-    .standout-desc{
-        color:var(--dark-gray-blue);
-        font-family: 'Barlow';
-        font-size: 1rem;
-        line-height:1.6rem;
-        font-weight:600;
-        margin-bottom:2rem;
+    .standout-cup { 
+        grid-column: 1 / 2;
+          background-image:url(images/desktop/image-stand-out.jpg);
     }
-    .standout-button{
-        width:33%;
-        background: rgb(255,255,255);
-        background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 70%, rgba(254,120,103,0.25) 70%, rgba(254,120,103,0.25) 100%);
-        border:none;
-        font-family: 'Fraunces';
-        font-size:0.83rem;
-        font-weight: 900;
-        text-transform: uppercase;
-        color:var(--dark-desat-blue);
+    
+    .standout-text{
+        grid-column: 2 / 3;
+        display: flex;
+        flex-direction: column;
+        padding:9rem;
     }
-    .standout-button:hover{
-        cursor:pointer;
-        background: rgb(255,255,255);
-        background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 70%, rgba(254,120,103,1) 70%, rgba(254,120,103,1) 100%);
-        border:none;
-    }
-      .main-cherry { 
-        grid-area: cherry; 
+    
+    .main-cherry { 
+        grid-column: 1 / 2;
         background-image:url(images/desktop/image-graphic-design.jpg);
         background-repeat: no-repeat;
         background-size:cover;
         padding-left:9rem;
         padding-right:9rem;
-        padding-top:22rem;
         text-align: center;
         color:var(--graphic-design-cyan);
     }
-    .cherry-title{
-        font-size:1.5rem;
-        font-family:'Fraunces';
-        font-weight:900;
-        margin-bottom:1rem;
-    }
-    .cherry-desc{
-        font-family:'Barlow';
-        font-size:0.8rem;
-        font-weight:600;
-        line-height: 1.5rem;
-    }
     .main-orange { 
-        grid-area: orange; 
+        grid-column: 2 / 3;
         background-image:url(images/desktop/image-photography.jpg);
         background-repeat: no-repeat;
         background-size:cover;
         padding-left:9rem;
         padding-right:9rem;
-        padding-top:22rem;
+        padding-top:20rem;
         text-align: center;
         color:var(--photography-blue);
     }
-    .orange-title{
-        font-size:1.5rem;
-        font-family:'Fraunces';
-        font-weight:900;
-        margin-bottom:1rem;
-        
-    }
-    .orange-desc{
-        font-family:'Barlow';
-        font-size:0.8rem;
-        font-weight:600;
-        line-height: 1.5rem;
-    }
-    .testimonials{
-        padding:12%;
-    }
-    .testimonials-title{
-        font-family:'Fraunces';
-        font-size:1.1rem;
-        letter-spacing:0.27rem;
-        color:var(--gray-blue);
-        text-align: center;
-        text-transform: uppercase;
-        margin-bottom:2rem;
-        
-    }
+    
+    
+
     .testimonials-grid{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr; 
@@ -310,39 +442,6 @@ button:hover{
     .photogrid-img{
         max-width:25%;
     }
-    .bottom{
-        background-color:#90D4C6;
-        padding:9rem 9rem 3rem 9rem;
-        text-align: center;
-    }
-    .bottom-links{
-        list-style: none;
-        display: flex;
-        width:50%;
-        margin: 3rem auto 0;
-        justify-content: space-evenly;
-        text-align: center;
-    }
-    .bottom-link a{
-        color:var(--footer-cyan);
-        text-decoration: none;
-        font-family: 'Barlow';
-    }
-    .bottom-link a:hover{
-        color:var(--white);
-    }
-    .bottom-icons{
-        list-style: none;
-        display:flex;
-        width:10rem;
-        margin: 5rem auto 0;
-        justify-content: space-between;
-    }
-    .bottom-icon{
-        margin-right:10px;
-    }
-    .bottom-icon:hover svg path{
-        fill:var(--white);
-    }
+    
 }
 
