@@ -39,6 +39,17 @@ button:hover{
     width:170px;
     height:auto;
 }
+.navbar-links a{
+    text-decoration:none;
+}
+.navbar-link{
+    font-family: 'Barlow';
+    font-weight:600;
+    padding:0;
+}
+.navbar-link a{
+    color:var(--dark-gray-blue);
+}
 .top-title{
     margin-top:105px;
     color:var(--white);
@@ -227,17 +238,48 @@ button:hover{
         display: none;
         position: absolute;
         width: 94%;
-        top:80px;
+        top:100px;
         right:3%;
         list-style: none;
         background-color:var(--white);
+        padding:10%;
+        
+    }
+    .navbar-links::before{
+        content: "";
+        width: 0px;
+        height: 0px;
+        position: absolute;
+        border-left: 12px solid transparent;
+        border-right: 24px solid #fff;
+        border-top: 24px solid transparent;
+        border-bottom: 20px solid #fff;
+        right: 0px;
+        top: -24px;
+    }
+    .navbar-link{
+        margin-bottom:2rem;
+    }
+    .navbar-link--contact{
+        background-color:var(--yellow);
+        padding:1rem 1.75rem;
+        font-family: 'Fraunces';
+        font-weight: 700;
+        font-size:0.83rem;
+        text-transform: uppercase;
+        border-radius:1.75rem;
+    }
+    .navbar-link--contact a{
+        color:var(--dark-desat-blue);
     }
     input[type="checkbox"] {
         position: absolute;
         visibility: hidden;
     }
     input:checked ~ .navbar-links{
-        display: block;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     .navbar-hamburger:hover{
         cursor:pointer;
